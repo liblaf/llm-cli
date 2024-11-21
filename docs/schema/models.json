@@ -53,10 +53,7 @@
     },
     "provider": {
       "default": "deepseek",
-      "enum": [
-        "deepseek",
-        "custom"
-      ],
+      "enum": ["deepseek", "custom"],
       "title": "Provider",
       "type": "string"
     },
