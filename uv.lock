@@ -306,7 +306,7 @@ wheels = [
 ]
 
 [[package]]
-name = "llm-cli"
+name = "liblaf-llm-cli"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
