@@ -1,0 +1,6 @@
+model = "deepseek-chat"
+provider = "deepseek"
+
+[providers.deepseek]
+api_key = "sk-***"
+base_url = "https://api.deepseek.com"

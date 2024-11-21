@@ -1,0 +1,75 @@
+{
+  "$defs": {
+    "DeepSeekConfig": {
+      "properties": {
+        "api_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Api Key"
+        },
+        "base_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": "https://api.deepseek.com",
+          "title": "Base Url"
+        }
+      },
+      "title": "DeepSeekConfig",
+      "type": "object"
+    },
+    "ProviderConfig": {
+      "properties": {
+        "deepseek": {
+          "$ref": "#/$defs/DeepSeekConfig",
+          "default": {
+            "api_key": null,
+            "base_url": "https://api.deepseek.com"
+          }
+        }
+      },
+      "title": "ProviderConfig",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "model": {
+      "default": "deepseek-chat",
+      "title": "Model",
+      "type": "string"
+    },
+    "provider": {
+      "default": "deepseek",
+      "enum": [
+        "deepseek",
+        "custom"
+      ],
+      "title": "Provider",
+      "type": "string"
+    },
+    "providers": {
+      "$ref": "#/$defs/ProviderConfig",
+      "default": {
+        "deepseek": {
+          "api_key": null,
+          "base_url": "https://api.deepseek.com"
+        }
+      }
+    }
+  },
+  "title": "Config",
+  "type": "object"
+}

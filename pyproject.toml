@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[dependency-groups]
+dev = ["icecream>=2.1.3"]
+
+[project]
+authors = [
+  { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
+]
+dependencies = [
+  "gitpython>=3.1.43",
+  "hishel>=0.1.1",
+  "httpx[socks]>=0.27.2",
+  "lazy-loader>=0.4",
+  "loguru>=0.7.2",
+  "openai>=1.55.0",
+  "pydantic-settings>=2.6.1",
+  "pydantic>=2.10.0",
+  "transformers>=4.46.3",
+  "typer>=0.13.1",
+]
+description = "Add your description here"
+name = "llm-cli"
+readme = "README.md"
+requires-python = ">=3.11"
+version = "0.0.0"
+
+[project.scripts]
+llm-cli = "llm_cli:app"
