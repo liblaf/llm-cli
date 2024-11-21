@@ -6,6 +6,14 @@
 ### 🎫 Chores
 
 * streamline CI configuration and update dependencies ([d017833](https://github.com/liblaf/llm-cli/commit/d01783327176d7951e0d241cf0358e68037d2d06))
+* update project name and add build configuration ([989ea88](https://github.com/liblaf/llm-cli/commit/989ea88b9df73e6d9729ce06e2036582f5226ff1))
+
+## [0.0.0](https://github.com/liblaf/llm-cli/compare/v0.0.0...v0.0.0) (2024-11-21)
+
+
+### 🎫 Chores
+
+* streamline CI configuration and update dependencies ([d017833](https://github.com/liblaf/llm-cli/commit/d01783327176d7951e0d241cf0358e68037d2d06))
 
 ## 0.0.0 (2024-11-21)
 
