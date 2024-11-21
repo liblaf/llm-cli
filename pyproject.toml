@@ -21,10 +21,10 @@ dependencies = [
   "transformers>=4.46.3",
   "typer>=0.13.1",
 ]
-description = "Add your description here"
+description = "🚀 LLM CLI - A versatile command-line interface for interacting with various AI models, supporting multiple providers like DeepSeek, and offering seamless integration for AI-driven tasks."
 name = "llm-cli"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 version = "0.0.0"
 
 [project.scripts]
