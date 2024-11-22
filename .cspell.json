@@ -3,6 +3,7 @@
   "version": "0.2",
   "language": "en",
   "words": [
+    "acompletion",
     "asyncio",
     "chatglm",
     "customise",
@@ -16,6 +17,7 @@
     "ipynb",
     "ipython",
     "liblaf",
+    "litellm",
     "mkdocs",
     "mypy",
     "numpy",

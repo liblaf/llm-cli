@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 import json
+import subprocess
 from pathlib import Path
 
-from llm_cli import llm
+import llm_cli as lc
 
 
 def main() -> None:
-    Path("docs/schema/models.json").write_text(
-        json.dumps(llm.Config.model_json_schema(), indent=2)
-    )
+    output: Path = Path("docs/schema/config.json")
+    output.write_text(json.dumps(lc.Config.model_json_schema()))
+    subprocess.run(["prettier", "--write", output], check=True)
 
 
 if __name__ == "__main__":

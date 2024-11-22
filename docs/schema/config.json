@@ -1,0 +1,22 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "model": {
+      "default": "deepseek/deepseek-chat",
+      "title": "Model",
+      "type": "string"
+    },
+    "temperature": {
+      "anyOf": [{ "type": "number" }, { "type": "null" }],
+      "default": null,
+      "title": "Temperature"
+    },
+    "top_p": {
+      "anyOf": [{ "type": "number" }, { "type": "null" }],
+      "default": null,
+      "title": "Top P"
+    }
+  },
+  "title": "Config",
+  "type": "object"
+}

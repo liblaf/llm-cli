@@ -1,10 +1,10 @@
 import importlib.resources
 import json
-import subprocess
 import tempfile
 from pathlib import Path
 
-from llm_cli import llm
+import llm_cli as lc
+import llm_cli.utils as lu
 
 
 async def main(instruction: str) -> None:
@@ -15,11 +15,9 @@ async def main(instruction: str) -> None:
         instruction_fpath: Path = tmpdir / "repomix-instruction.md"
         instruction_fpath.write_text(_get_instruction(instruction))
         config_fpath.write_text(_get_config(tmpdir, instruction_fpath))
-        subprocess.run(["repomix", "--config", config_fpath], check=True, text=True)
+        await lu.run("repomix", "--config", config_fpath)
         prompt: str = output_file_path.read_text()
-    cfg: llm.Config = llm.Config()
-    result: str = await llm.output(cfg, prompt)
-    # TODO
+    await lc.output(prompt, prefix="<answer>", stop="</answer>")
 
 
 def _get_config(tmpdir: Path, instruction_fpath: Path) -> str:
