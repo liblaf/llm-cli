@@ -1,7 +1,7 @@
-from . import cmd, config, llm, utils
+from . import cmd, config, interactive, utils
 from .cmd import app
 from .config import Config, get_config
-from .llm import output, pretty_usage
+from .interactive import output, pretty_usage
 
 __all__ = [
     "Config",
@@ -9,7 +9,7 @@ __all__ = [
     "cmd",
     "config",
     "get_config",
-    "llm",
+    "interactive",
     "output",
     "pretty_usage",
     "utils",
