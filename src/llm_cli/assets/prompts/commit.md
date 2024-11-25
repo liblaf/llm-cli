@@ -8,7 +8,7 @@ ${GIT_DIFF}
 Now, if provided, use this context to understand the motivation behind the changes and any relevant background information:
 <AdditionalContext>
 <RepositoryStructure>
-${FILES}
+${GIT_FILES}
 </RepositoryStructure>
 </AdditionalContext>
 
@@ -45,6 +45,7 @@ The commit message should be structured as follows:
 ```
 
 - lines must not be longer than 74 characters
+- use a markdown list for the optional body if it contains multiple items
 - choose only 1 type from the type-to-description below:
   - feat: Introduce new features
   - fix: Fix a bug

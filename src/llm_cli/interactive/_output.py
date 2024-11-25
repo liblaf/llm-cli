@@ -1,4 +1,4 @@
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from typing import Any
 
 import litellm
@@ -7,12 +7,14 @@ from rich.live import Live
 from rich.panel import Panel
 
 import llm_cli as lc
+import llm_cli.utils as lu
 
 
 async def output(
     prompt: str,
     *,
     prefix: str | None = None,
+    sanitize: Callable[[str], str] | None = lu.extract_between_tags,
     stop: str | Sequence[str] | None = None,
     title: str | None = None,
 ) -> litellm.ModelResponse:
@@ -36,7 +38,8 @@ async def output(
             response = litellm.stream_chunk_builder(chunks)  # pyright: ignore [reportAssignmentType]
             choices: litellm.Choices = response.choices[0]  # pyright: ignore [reportAssignmentType]
             content: str = choices.message.content or ""
-            content = content.strip()
+            if sanitize:
+                content = sanitize(content)
             live.update(
                 Group(
                     Panel(content, title=title, title_align="left"),
