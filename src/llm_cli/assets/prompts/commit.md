@@ -47,16 +47,16 @@ The commit message should be structured as follows:
 - lines must not be longer than 74 characters
 - use a markdown list for the optional body if it contains multiple items
 - choose only 1 type from the type-to-description below:
-  - feat: Introduce new features
-  - fix: Fix a bug
-  - refactor: Refactor code that neither fixes a bug nor adds a feature
-  - perf: A code change that improves performance
-  - style: Add or update style files that do not affect the meaning of the code
-  - test: Adding missing tests or correcting existing tests
-  - docs: Documentation only changes
-  - ci: Changes to our CI configuration files and scripts
-  - chore: Other changes that don't modify src or test file
-  - build: Make architectural changes
+  - feat: introduce new features
+  - fix: fix a bug
+  - refactor: refactor code that neither fixes a bug nor adds a feature
+  - perf: a code change that improves performance
+  - style: add or update style files that do not affect the meaning of the code
+  - test: adding missing tests or correcting existing tests
+  - docs: documentation only changes
+  - ci: changes to our CI configuration files and scripts
+  - chore: other changes that don't modify src or test file
+  - build: make architectural changes
 - don't over explain and write your commit message inside <Answer> tags and include no other text.
 
 Now, based on the provided code diff and any additional context, create a concise but meaningful commit message following the instructions above.
