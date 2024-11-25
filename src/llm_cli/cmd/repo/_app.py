@@ -1,18 +1,8 @@
-import asyncio
-from typing import Annotated
-
 import typer
 
+import llm_cli.utils as lu
+from llm_cli import cmd
+
 app: typer.Typer = typer.Typer(name="repo", no_args_is_help=True)
-
-
-@app.command()
-def main(
-    *,
-    instruction: Annotated[
-        str, typer.Option("-i", "--instruction", help="[description|topics]")
-    ],
-) -> None:
-    from ._main import main
-
-    asyncio.run(main(instruction=instruction))
+lu.add_command(app, cmd.repo.description.app)
+lu.add_command(app, cmd.repo.topics.app)
