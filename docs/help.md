@@ -3,7 +3,7 @@
 **Usage**:
 
 ```console
-$ llm-cli [OPTIONS] COMMAND [ARGS]...
+llm-cli [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -20,7 +20,7 @@ $ llm-cli [OPTIONS] COMMAND [ARGS]...
 **Usage**:
 
 ```console
-$ llm-cli commit [OPTIONS]
+llm-cli commit [OPTIONS]
 ```
 
 **Options**:
@@ -32,7 +32,7 @@ $ llm-cli commit [OPTIONS]
 **Usage**:
 
 ```console
-$ llm-cli repo [OPTIONS] COMMAND [ARGS]...
+llm-cli repo [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -49,7 +49,7 @@ $ llm-cli repo [OPTIONS] COMMAND [ARGS]...
 **Usage**:
 
 ```console
-$ llm-cli repo description [OPTIONS]
+llm-cli repo description [OPTIONS]
 ```
 
 **Options**:
@@ -61,7 +61,7 @@ $ llm-cli repo description [OPTIONS]
 **Usage**:
 
 ```console
-$ llm-cli repo topics [OPTIONS]
+llm-cli repo topics [OPTIONS]
 ```
 
 **Options**:
