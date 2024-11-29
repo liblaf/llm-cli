@@ -1,4 +1,4 @@
 from ._output import output
-from ._pretty_usage import pretty_usage
+from ._usage import pretty_usage, usage_panel
 
-__all__ = ["output", "pretty_usage"]
+__all__ = ["output", "pretty_usage", "usage_panel"]

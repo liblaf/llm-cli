@@ -27,6 +27,8 @@ async def repomix(instruction: str | None = None) -> str:
             instruction_fpath: Path = tmpdir / "repomix-instruction.md"
             instruction_fpath.write_text(instruction)
             config["output"]["instructionFilePath"] = str(instruction_fpath)
+        ignore_patterns: list[str] = lcu.get_ignore_patterns()
+        config["ignore"]["customPatterns"] += ignore_patterns
         config_fpath.write_text(json.dumps(config))
         await lcu.run("repomix", "--config", config_fpath, check=True)
         return output_fpath.read_text()

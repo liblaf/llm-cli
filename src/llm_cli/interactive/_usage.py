@@ -1,4 +1,5 @@
 import litellm
+from rich.panel import Panel
 
 
 def pretty_usage(response: litellm.ModelResponse) -> str:
@@ -10,3 +11,7 @@ def pretty_usage(response: litellm.ModelResponse) -> str:
 Tokens : {usage.total_tokens} (Total) = {usage.prompt_tokens} (Prompt) + {usage.completion_tokens} (Completion)
 Cost   : ${cost}
 """.strip()
+
+
+def usage_panel(response: litellm.ModelResponse, *, expand: bool = False) -> Panel:
+    return Panel(pretty_usage(response), expand=expand)
