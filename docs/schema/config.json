@@ -187,8 +187,8 @@
         },
         "custom_llm_provider": {
           "anyOf": [
-            { "type": "string" },
             { "type": "object" },
+            { "type": "string" },
             { "type": "null" }
           ],
           "default": null,

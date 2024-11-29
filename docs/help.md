@@ -8,6 +8,7 @@ $ llm-cli [OPTIONS] COMMAND [ARGS]...
 
 **Options**:
 
+- `--model TEXT`
 - `--help`: Show this message and exit.
 
 **Commands**:
