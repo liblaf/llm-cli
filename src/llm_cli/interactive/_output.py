@@ -38,6 +38,8 @@ async def output(
             response = litellm.stream_chunk_builder(chunks)  # pyright: ignore [reportAssignmentType]
             choices: litellm.Choices = response.choices[0]  # pyright: ignore [reportAssignmentType]
             content: str = choices.message.content or ""
+            if prefix and not content.startswith(prefix):
+                content = prefix + content
             if sanitize:
                 content = sanitize(content)
             live.update(
