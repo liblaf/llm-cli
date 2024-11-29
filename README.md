@@ -21,21 +21,21 @@ LLM CLI is a powerful, open-source command-line interface for AI-driven reposito
 
 </div>
 
-[github-release-shield]: https://img.shields.io/github/v/release/liblaf/llm-cli?color=369eff&logo=github&style=flat
+[github-release-shield]: https://img.shields.io/github/v/release/liblaf/llm-cli?color=369eff&logo=github
 [github-release-link]: https://github.com/liblaf/llm-cli/releases
 [github-releasedate-shield]: https://img.shields.io/github/release-date/liblaf/llm-cli?style=flat
 [github-releasedate-link]: https://github.com/liblaf/llm-cli/releases
-[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/llm-cli/ci.yml?label=ci&logo=githubactions&logoColor=white&style=flat
-[github-action-ci-link]: https://github.com/liblaf/llm-cli/actions/workflows/ci.yml
-[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/llm-cli?color=c4f042&style=flat
+[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/llm-cli/ci.yaml?label=CI&logo=githubactions&logoColor=white
+[github-action-ci-link]: https://github.com/liblaf/llm-cli/actions/workflows/ci.yaml
+[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/llm-cli?color=c4f042
 [github-contributors-link]: https://github.com/liblaf/llm-cli/graphs/contributors
-[github-forks-shield]: https://img.shields.io/github/forks/liblaf/llm-cli?color=8ae8ff&style=flat
+[github-forks-shield]: https://img.shields.io/github/forks/liblaf/llm-cli?color=8ae8ff
 [github-forks-link]: https://github.com/liblaf/llm-cli/network/members
-[github-stars-shield]: https://img.shields.io/github/stars/liblaf/llm-cli?color=ffcb47&style=flat
+[github-stars-shield]: https://img.shields.io/github/stars/liblaf/llm-cli?color=ffcb47
 [github-stars-link]: https://github.com/liblaf/llm-cli/network/stargazers
-[github-issues-shield]: https://img.shields.io/github/issues/liblaf/llm-cli?color=ff80eb&style=flat
+[github-issues-shield]: https://img.shields.io/github/issues/liblaf/llm-cli?color=ff80eb
 [github-issues-link]: https://github.com/liblaf/llm-cli/issues
-[github-license-shield]: https://img.shields.io/github/license/liblaf/llm-cli?color=white&style=flat
+[github-license-shield]: https://img.shields.io/github/license/liblaf/llm-cli?color=white
 [github-license-link]: https://github.com/liblaf/llm-cli/blob/main/LICENSE
 
 ## 📦 Installation

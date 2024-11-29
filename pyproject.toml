@@ -32,5 +32,12 @@ version = "0.0.0"
 [project.scripts]
 llm-cli = "llm_cli:app"
 
+[project.urls]
+"Changelog" = "https://github.com/liblaf/llm-cli/blob/main/CHANGELOG.md"
+"Homepage" = "https://github.com/liblaf/llm-cli"
+"Issue Tracker" = "https://github.com/liblaf/llm-cli/issues"
+"Release Notes" = "https://github.com/liblaf/llm-cli/releases"
+"Source Code" = "https://github.com/liblaf/llm-cli"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/llm_cli"]
