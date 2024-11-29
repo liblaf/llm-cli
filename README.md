@@ -77,7 +77,6 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 </div>
 
-[github-issues-link]: https://github.com/liblaf/llm-cli/issues
 [pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 [pr-welcome-link]: https://github.com/liblaf/llm-cli/pulls
 [github-contrib-shield]: https://contrib.rocks/image?repo=liblaf%2Fllm-cli
