@@ -30,9 +30,9 @@ LLM CLI is a powerful, open-source command-line interface for AI-driven reposito
 [github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/llm-cli?color=c4f042&style=flat
 [github-contributors-link]: https://github.com/liblaf/llm-cli/graphs/contributors
 [github-forks-shield]: https://img.shields.io/github/forks/liblaf/llm-cli?color=8ae8ff&style=flat
-[github-forks-link]: https://github.com/liblaf/llm-cli/network/members
+[github-forks-link]: https://github.com/liblaf/llm-cli/forks
 [github-stars-shield]: https://img.shields.io/github/stars/liblaf/llm-cli?color=ffcb47&style=flat
-[github-stars-link]: https://github.com/liblaf/llm-cli/network/stargazers
+[github-stars-link]: https://github.com/liblaf/llm-cli/stargazers
 [github-issues-shield]: https://img.shields.io/github/issues/liblaf/llm-cli?color=ff80eb&style=flat
 [github-issues-link]: https://github.com/liblaf/llm-cli/issues
 [github-license-shield]: https://img.shields.io/github/license/liblaf/llm-cli?color=white&style=flat
