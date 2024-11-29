@@ -23,7 +23,7 @@ dependencies = [
   "transformers>=4.46.3",
   "typer>=0.13.1",
 ]
-description = "TODO"
+description = "🚀 LLM CLI - a powerful, open-source command-line interface for AI-driven repository management. Simplifies commit message generation, repository description, and topic suggestion, enhancing productivity and collaboration for developers."
 name = "liblaf-llm-cli"
 readme = "README.md"
 requires-python = ">=3.12"
