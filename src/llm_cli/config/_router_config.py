@@ -1,6 +1,7 @@
 import functools
 
 import litellm
+import pydantic
 
 import llm_cli.config as lcc
 
@@ -55,11 +56,13 @@ def default_model_list() -> list[ModelConfig]:
 
 
 class RouterConfig(litellm.RouterConfig):
-    model_list: list[ModelConfig] = default_model_list()  # pyright: ignore [reportIncompatibleVariableOverride]
+    model_list: list[ModelConfig] = pydantic.Field(default_factory=default_model_list)  # pyright: ignore [reportIncompatibleVariableOverride]
     num_retries: int = 3  # pyright: ignore [reportIncompatibleVariableOverride]
-    fallbacks: list[dict[str, list[str]]] = [  # pyright: ignore [reportIncompatibleVariableOverride]  # noqa: RUF012
-        {"deepseek-chat": ["qwen-max", "qwen-plus", "qwen-turbo", "qwen-long"]}
-    ]
+    fallbacks: list[dict[str, list[str]]] = pydantic.Field(  # pyright: ignore [reportIncompatibleVariableOverride]
+        default_factory=lambda: [
+            {"deepseek-chat": ["qwen-max", "qwen-plus", "qwen-turbo", "qwen-long"]}
+        ]
+    )
 
     @functools.cached_property
     def router(self) -> litellm.Router:

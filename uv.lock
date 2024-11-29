@@ -490,6 +490,7 @@ dependencies = [
     { name = "rich" },
     { name = "transformers" },
     { name = "typer" },
+    { name = "typer-di" },
 ]
 
 [package.dev-dependencies]
@@ -511,6 +512,7 @@ requires-dist = [
     { name = "rich", specifier = ">=13.9.4" },
     { name = "transformers", specifier = ">=4.46.3" },
     { name = "typer", specifier = ">=0.13.1" },
+    { name = "typer-di", specifier = ">=0.1.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -1159,6 +1161,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0d/7e/24af5b9aaa0872f9f6dc5dcf789dc3e57ceb23b4c570b852cd4db0d98f14/typer-0.14.0.tar.gz", hash = "sha256:af58f737f8d0c0c37b9f955a6d39000b9ff97813afcbeef56af5e37cf743b45a", size = 98836 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/bb/d8/a3ab71d5587b42b832a7ef2e65b3e51a18f8da32b6ce169637d4d21995ed/typer-0.14.0-py3-none-any.whl", hash = "sha256:f476233a25770ab3e7b2eebf7c68f3bc702031681a008b20167573a4b7018f09", size = 44707 },
+]
+
+[[package]]
+name = "typer-di"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/68/6c50ecfc8c088db9055d652ed199899c67754211adf5e7abc8edf73700d7/typer_di-0.1.2.tar.gz", hash = "sha256:f66f60abe828239a1a2cd655f1f64873693f0c73d30222234da1ae93d3e7c049", size = 5993 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/97/9a/7b68544864f2e66c182f174f8b3cd1c2d8fe509cf28c21c3cf31ab76768c/typer_di-0.1.2-py3-none-any.whl", hash = "sha256:db3286976e80a829e13ed2deb6e42d4f26355a1bd09ecae32e8141b4c701f111", size = 7516 },
 ]
 
 [[package]]

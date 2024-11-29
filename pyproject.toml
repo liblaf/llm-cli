@@ -21,6 +21,7 @@ dependencies = [
   "python-dotenv>=1.0.1",
   "rich>=13.9.4",
   "transformers>=4.46.3",
+  "typer-di>=0.1.2",
   "typer>=0.13.1",
 ]
 description = "🚀 LLM CLI - a powerful, open-source command-line interface for AI-driven repository management. Simplifies commit message generation, repository description, and topic suggestion, enhancing productivity and collaboration for developers."
@@ -30,6 +31,7 @@ requires-python = ">=3.12"
 version = "0.0.0"
 
 [project.scripts]
+aic = "llm_cli.cmd.commit:app"
 llm-cli = "llm_cli:app"
 
 [project.urls]

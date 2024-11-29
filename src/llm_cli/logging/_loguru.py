@@ -1,9 +1,12 @@
+import functools
 import inspect
 import logging
 import sys
 import types
 
 from loguru import logger
+
+import llm_cli as lc
 
 
 class InterceptHandler(logging.Handler):
@@ -28,6 +31,16 @@ class InterceptHandler(logging.Handler):
         )
 
 
+@functools.cache
 def init_loguru() -> None:
+    lc.logging.fix_litellm()
     logging.basicConfig(handlers=[InterceptHandler()], level=0, force=True)
-    logger.configure(handlers=[{"sink": sys.stderr, "level": "INFO"}])
+    logger.configure(
+        handlers=[
+            {
+                "sink": sys.stderr,
+                "level": "INFO",
+                "filter": {"httpx": "WARNING", "litellm": "WARNING"},
+            }
+        ]
+    )

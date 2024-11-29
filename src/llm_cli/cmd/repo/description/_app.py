@@ -1,12 +1,14 @@
 import asyncio
 
-import typer
+import typer_di
 
-app: typer.Typer = typer.Typer(name="description", no_args_is_help=True)
+import llm_cli.utils as lcu
+
+app = typer_di.TyperDI(name="description")
 
 
 @app.command()
-def main() -> None:
+def main(_: None = typer_di.Depends(lcu.get_config)) -> None:
     from ._main import main
 
     asyncio.run(main())

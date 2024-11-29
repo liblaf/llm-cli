@@ -8,7 +8,6 @@ llm-cli [OPTIONS] COMMAND [ARGS]...
 
 **Options**:
 
-- `--model TEXT`
 - `--help`: Show this message and exit.
 
 **Commands**:
@@ -32,6 +31,7 @@ llm-cli commit [OPTIONS] [PATH]...
 
 - `--default-exclude / --no-default-exclude`: [default: default-exclude]
 - `--verify / --no-verify`: [default: verify]
+- `--model TEXT`
 - `--help`: Show this message and exit.
 
 ## `llm-cli repo`
@@ -61,6 +61,7 @@ llm-cli repo description [OPTIONS]
 
 **Options**:
 
+- `--model TEXT`
 - `--help`: Show this message and exit.
 
 ### `llm-cli repo topics`
@@ -73,4 +74,5 @@ llm-cli repo topics [OPTIONS]
 
 **Options**:
 
+- `--model TEXT`
 - `--help`: Show this message and exit.
