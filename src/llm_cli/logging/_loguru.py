@@ -29,4 +29,5 @@ class InterceptHandler(logging.Handler):
 
 
 def init_loguru() -> None:
+    logging.basicConfig(handlers=[InterceptHandler()], level=0, force=True)
     logger.configure(handlers=[{"sink": sys.stderr, "level": "INFO"}])
