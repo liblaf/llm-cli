@@ -44,8 +44,6 @@ The commit message should be structured as follows:
 [optional footer(s)]
 ```
 
-- lines must not be longer than 74 characters
-- use a markdown list for the optional body if it contains multiple items
 - choose only 1 type from the type-to-description below:
   - feat: introduce new features
   - fix: fix a bug
@@ -57,6 +55,8 @@ The commit message should be structured as follows:
   - ci: changes to our CI configuration files and scripts
   - chore: other changes that don't modify src or test file
   - build: make architectural changes
-- don't over explain and write your commit message inside <Answer> tags and include no other text.
+- don't over explain and write your commit message inside <Answer> tags and include no other text
+- if the commit involves multiple changes, use markdown unordered list in the commit body to list them clearly
+- lines must not be longer than 74 characters
 
 Now, based on the provided code diff and any additional context, create a concise but meaningful commit message following the instructions above.
