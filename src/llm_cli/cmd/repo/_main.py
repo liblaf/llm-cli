@@ -4,7 +4,7 @@ import tempfile
 from pathlib import Path
 
 import llm_cli as lc
-import llm_cli.utils as lu
+import llm_cli.utils as lcu
 
 
 async def main(instruction: str) -> None:
@@ -15,7 +15,7 @@ async def main(instruction: str) -> None:
         instruction_fpath: Path = tmpdir / "repomix-instruction.md"
         instruction_fpath.write_text(_get_instruction(instruction))
         config_fpath.write_text(_get_config(tmpdir, instruction_fpath))
-        await lu.run("repomix", "--config", config_fpath)
+        await lcu.run("repomix", "--config", config_fpath)
         prompt: str = output_file_path.read_text()
     await lc.output(prompt, prefix="<answer>", stop="</answer>")
 

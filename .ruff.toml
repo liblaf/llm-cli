@@ -3,5 +3,5 @@ extend = ".github/linters/.ruff.toml"
 
 [lint.flake8-import-conventions.aliases]
 "llm_cli" = "lc"
-"llm_cli.cmd" = "cmd"
-"llm_cli.utils" = "lu"
+"llm_cli.cmd" = "lcc"
+"llm_cli.utils" = "lcu"

@@ -1,7 +1,7 @@
 import dotenv
 
-import llm_cli.utils as lu
+import llm_cli.utils as lcu
 
 
 def init_litellm() -> bool:
-    return dotenv.load_dotenv(lu.get_app_dir() / "litellm.env")
+    return dotenv.load_dotenv(lcu.get_app_dir() / "litellm.env")

@@ -1,9 +1,8 @@
 import functools
 
-import llm_cli as lc
+import llm_cli.config as lcc
 
 
 @functools.cache
-def get_config() -> lc.config.Config:
-    lc.config.init_litellm()
-    return lc.config.Config()
+def get_config() -> lcc.Config:
+    return lcc.Config()

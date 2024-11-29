@@ -2,7 +2,7 @@ import json
 import tempfile
 from pathlib import Path
 
-import llm_cli.utils as lu
+import llm_cli.utils as lcu
 
 
 async def repomix(instruction: str | None = None) -> str:
@@ -27,5 +27,5 @@ async def repomix(instruction: str | None = None) -> str:
             instruction_fpath.write_text(instruction)
             config["output"]["instructionFilePath"] = str(instruction_fpath)
         config_fpath.write_text(json.dumps(config))
-        await lu.run("repomix", "--config", config_fpath, check=True)
+        await lcu.run("repomix", "--config", config_fpath, check=True)
         return output_fpath.read_text()

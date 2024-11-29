@@ -1,17 +1,17 @@
+import litellm
 import pydantic_settings as ps
 
-import llm_cli.utils as lu
+import llm_cli.config as lcc
+import llm_cli.utils as lcu
 
 
 class Config(ps.BaseSettings):
-    model_config = ps.SettingsConfigDict(toml_file=[lu.get_app_dir() / "config.toml"])
+    model_config = ps.SettingsConfigDict(toml_file=[lcu.get_app_dir() / "config.toml"])
 
-    # https://docs.litellm.ai/docs/completion/input
-    # Required Fields
-    model: str = "deepseek/deepseek-chat"
-    # Optional Fields
-    temperature: float | None = None
-    top_p: float | None = None
+    completion: litellm.CompletionRequest = litellm.CompletionRequest(
+        model="deepseek-chat"
+    )
+    router: lcc.RouterConfig = lcc.RouterConfig()
 
     @classmethod
     def settings_customise_sources(

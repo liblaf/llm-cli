@@ -1,2 +1,0 @@
-#:schema https://github.com/liblaf/llm-cli/raw/refs/heads/main/docs/schema/config.json
-model = "deepseek-chat"
