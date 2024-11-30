@@ -28,7 +28,7 @@ description = "🚀 LLM CLI - a powerful, open-source command-line interface for
 name = "liblaf-ai-cli"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.0.0"
+version = "0.0.1"
 
 [project.scripts]
 ai = "ai:app"

@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.0.1](https://github.com/liblaf/ai-cli/compare/v0.0.0...v0.0.1) (2024-11-30)
+
+
+### 🐛 Bug Fixes
+
+* clear logging handlers for LiteLLM to prevent duplicate logs ([418effd](https://github.com/liblaf/ai-cli/commit/418effd5caa375abc7f4dff2883be84c2e1e9b82))
+
+
+### 📝 Documentation
+
+* update GitHub links in README ([b704a54](https://github.com/liblaf/ai-cli/commit/b704a54f11dd769af19a95a07b744ea5e26cf524))
+* update README and pyproject.toml with improved URLs and badges ([954ad5f](https://github.com/liblaf/ai-cli/commit/954ad5f6b0d321e49689f530e36ce0fdb5ab92e1))
+* update README badges to use PyPI release info ([fc05511](https://github.com/liblaf/ai-cli/commit/fc0551153817065c7e35c9c9759005b4f0a3ff96))
+
+
+### ♻ Code Refactoring
+
+* rename project and related references to 'ai-cli' ([ea2baaf](https://github.com/liblaf/ai-cli/commit/ea2baaf45ac5bac8e3c1cd20afe24cca42ffe573))
+* streamline CLI and logging initialization ([9e04a97](https://github.com/liblaf/ai-cli/commit/9e04a97e14bacda010ea0cda02d0684938637902))
+
 ## [0.0.0](https://github.com/liblaf/llm-cli/compare/v0.0.0...v0.0.0) (2024-11-29)
 
 
