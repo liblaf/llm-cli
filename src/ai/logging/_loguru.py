@@ -6,7 +6,7 @@ import types
 
 from loguru import logger
 
-import llm_cli as lc
+import ai
 
 
 class InterceptHandler(logging.Handler):
@@ -33,7 +33,7 @@ class InterceptHandler(logging.Handler):
 
 @functools.cache
 def init_loguru() -> None:
-    lc.logging.fix_litellm()
+    ai.logging.fix_litellm()
     logging.basicConfig(handlers=[InterceptHandler()], level=0, force=True)
     logger.configure(
         handlers=[

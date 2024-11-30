@@ -1,8 +1,8 @@
 import functools
 
-import llm_cli as lc
+import ai
 
 
 @functools.cache
 def init() -> None:
-    lc.logging.init_loguru()
+    ai.logging.init_loguru()

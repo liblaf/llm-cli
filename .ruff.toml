@@ -2,7 +2,7 @@
 extend = ".github/linters/.ruff.toml"
 
 [lint.flake8-import-conventions.aliases]
-"llm_cli" = "lc"
-"llm_cli.cmd" = "lcm"
-"llm_cli.config" = "lcc"
-"llm_cli.utils" = "lcu"
+"ai" = "ai"
+"ai.cmd" = "aim"
+"ai.config" = "aic"
+"ai.utils" = "aiu"

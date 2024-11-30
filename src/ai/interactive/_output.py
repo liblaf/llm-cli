@@ -8,21 +8,21 @@ from rich.live import Live
 from rich.panel import Panel
 from rich.text import Text
 
-import llm_cli as lc
-import llm_cli.config as lcc
-import llm_cli.utils as lcu
-from llm_cli.interactive._usage import usage_panel
+import ai
+import ai.config as aic
+import ai.utils as aiu
+from ai.interactive._usage import usage_panel
 
 
 async def output(
     prompt: str,
     *,
     prefix: str | None = None,
-    sanitize: Callable[[str], str] | None = lcu.extract_between_tags,
+    sanitize: Callable[[str], str] | None = aiu.extract_between_tags,
     stop: str | Sequence[str] | None = None,
     title: str | Text | None = None,
 ) -> litellm.ModelResponse:
-    cfg: lcc.Config = lcc.get_config()
+    cfg: aic.Config = aic.get_config()
     router: litellm.Router = cfg.router.router
     messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
     if prefix:
@@ -53,7 +53,7 @@ async def output(
             )
     content: str = _get_content(response, prefix=prefix, sanitize=sanitize)
     print(content)
-    rich.print(Panel(lc.pretty_usage(response), expand=False))
+    rich.print(Panel(ai.pretty_usage(response), expand=False))
     return response
 
 
@@ -70,7 +70,7 @@ def _get_content(
     resp: litellm.ModelResponse,
     *,
     prefix: str | None = None,
-    sanitize: Callable[[str], str] | None = lcu.extract_between_tags,
+    sanitize: Callable[[str], str] | None = aiu.extract_between_tags,
 ) -> str:
     content: str = litellm.get_content_from_model_response(resp)
     if prefix and not content.startswith(prefix):

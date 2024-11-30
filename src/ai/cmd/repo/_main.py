@@ -3,8 +3,8 @@ import json
 import tempfile
 from pathlib import Path
 
-import llm_cli as lc
-import llm_cli.utils as lcu
+import ai
+import ai.utils as aiu
 
 
 async def main(instruction: str) -> None:
@@ -15,9 +15,9 @@ async def main(instruction: str) -> None:
         instruction_fpath: Path = tmpdir / "repomix-instruction.md"
         instruction_fpath.write_text(_get_instruction(instruction))
         config_fpath.write_text(_get_config(tmpdir, instruction_fpath))
-        await lcu.run("repomix", "--config", config_fpath)
+        await aiu.run("repomix", "--config", config_fpath)
         prompt: str = output_file_path.read_text()
-    await lc.output(prompt, prefix="<answer>", stop="</answer>")
+    await ai.output(prompt, prefix="<answer>", stop="</answer>")
 
 
 def _get_config(tmpdir: Path, instruction_fpath: Path) -> str:
@@ -46,5 +46,5 @@ def _get_instruction(instruction: str) -> str:
     if instruction_fpath.is_file():
         return Path(instruction).read_text()
     return importlib.resources.read_text(
-        "llm_cli.assets.instructions", f"{instruction}.md"
+        "ai_cli.assets.instructions", f"{instruction}.md"
     )

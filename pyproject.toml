@@ -25,21 +25,21 @@ dependencies = [
   "typer>=0.13.1",
 ]
 description = "🚀 LLM CLI - a powerful, open-source command-line interface for AI-driven repository management. Simplifies commit message generation, repository description, and topic suggestion, enhancing productivity and collaboration for developers."
-name = "liblaf-llm-cli"
+name = "liblaf-ai-cli"
 readme = "README.md"
 requires-python = ">=3.12"
 version = "0.0.0"
 
 [project.scripts]
-aic = "llm_cli.cmd.commit:app"
-llm-cli = "llm_cli:app"
+ai = "ai:app"
+aic = "ai.cmd.commit:app"
 
 [project.urls]
-"Changelog" = "https://github.com/liblaf/llm-cli/blob/main/CHANGELOG.md"
-"Homepage" = "https://github.com/liblaf/llm-cli"
-"Issue Tracker" = "https://github.com/liblaf/llm-cli/issues"
-"Release Notes" = "https://github.com/liblaf/llm-cli/releases"
-"Source Code" = "https://github.com/liblaf/llm-cli"
+"Changelog" = "https://github.com/liblaf/ai-cli/blob/main/CHANGELOG.md"
+"Homepage" = "https://github.com/liblaf/ai-cli"
+"Issue Tracker" = "https://github.com/liblaf/ai-cli/issues"
+"Release Notes" = "https://github.com/liblaf/ai-cli/releases"
+"Source Code" = "https://github.com/liblaf/ai-cli"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/llm_cli"]
+packages = ["src/ai"]

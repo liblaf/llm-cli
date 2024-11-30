@@ -21,35 +21,35 @@ LLM CLI is a powerful, open-source command-line interface for AI-driven reposito
 
 </div>
 
-[pypi-release-shield]: https://img.shields.io/pypi/v/liblaf-llm-cli?logo=pypi&style=flat&label=PyPI
-[pypi-release-link]: https://pypi.org/project/liblaf-llm-cli/
-[github-releasedate-shield]: https://img.shields.io/github/release-date/liblaf/llm-cli?style=flat
-[github-releasedate-link]: https://github.com/liblaf/llm-cli/releases
-[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/llm-cli/ci.yaml?label=ci&logo=githubactions&logoColor=white&style=flat
-[github-action-ci-link]: https://github.com/liblaf/llm-cli/actions/workflows/ci.yaml
-[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/llm-cli?color=c4f042&style=flat
-[github-contributors-link]: https://github.com/liblaf/llm-cli/graphs/contributors
-[github-forks-shield]: https://img.shields.io/github/forks/liblaf/llm-cli?color=8ae8ff&style=flat
-[github-forks-link]: https://github.com/liblaf/llm-cli/forks
-[github-stars-shield]: https://img.shields.io/github/stars/liblaf/llm-cli?color=ffcb47&style=flat
-[github-stars-link]: https://github.com/liblaf/llm-cli/stargazers
-[github-issues-shield]: https://img.shields.io/github/issues/liblaf/llm-cli?color=ff80eb&style=flat
-[github-issues-link]: https://github.com/liblaf/llm-cli/issues
-[github-license-shield]: https://img.shields.io/github/license/liblaf/llm-cli?color=white&style=flat
-[github-license-link]: https://github.com/liblaf/llm-cli/blob/main/LICENSE
+[pypi-release-shield]: https://img.shields.io/pypi/v/liblaf-ai-cli?logo=pypi&style=flat&label=PyPI
+[pypi-release-link]: https://pypi.org/project/liblaf-ai-cli/
+[github-releasedate-shield]: https://img.shields.io/github/release-date/liblaf/ai-cli?style=flat
+[github-releasedate-link]: https://github.com/liblaf/ai-cli/releases
+[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/ai-cli/ci.yaml?label=ci&logo=githubactions&logoColor=white&style=flat
+[github-action-ci-link]: https://github.com/liblaf/ai-cli/actions/workflows/ci.yaml
+[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/ai-cli?color=c4f042&style=flat
+[github-contributors-link]: https://github.com/liblaf/ai-cli/graphs/contributors
+[github-forks-shield]: https://img.shields.io/github/forks/liblaf/ai-cli?color=8ae8ff&style=flat
+[github-forks-link]: https://github.com/liblaf/ai-cli/forks
+[github-stars-shield]: https://img.shields.io/github/stars/liblaf/ai-cli?color=ffcb47&style=flat
+[github-stars-link]: https://github.com/liblaf/ai-cli/stargazers
+[github-issues-shield]: https://img.shields.io/github/issues/liblaf/ai-cli?color=ff80eb&style=flat
+[github-issues-link]: https://github.com/liblaf/ai-cli/issues
+[github-license-shield]: https://img.shields.io/github/license/liblaf/ai-cli?color=white&style=flat
+[github-license-link]: https://github.com/liblaf/ai-cli/blob/main/LICENSE
 
 ## 📦 Installation
 
-To install `llm-cli`, run the following command:
+To install `ai-cli`, run the following command:
 
 ```bash
-uv tool install liblaf-llm-cli
+uv tool install liblaf-ai-cli
 ```
 
 or
 
 ```bash
-pipx install liblaf-llm-cli
+pipx install liblaf-ai-cli
 ```
 
 ## ⌨️ Local Development
@@ -57,10 +57,10 @@ pipx install liblaf-llm-cli
 You can clone it for local development:
 
 ```bash
-gh repo clone liblaf/llm-cli
-cd llm-cli
+gh repo clone liblaf/ai-cli
+cd ai-cli
 uv sync --all-extras
-llm-cli --help
+ai-cli --help
 ```
 
 ## 🤝 Contributing
@@ -78,9 +78,9 @@ Contributions of all types are more than welcome, if you are interested in contr
 </div>
 
 [pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-[pr-welcome-link]: https://github.com/liblaf/llm-cli/pulls
-[github-contrib-shield]: https://contrib.rocks/image?repo=liblaf%2Fllm-cli
-[github-contrib-link]: https://github.com/liblaf/llm-cli/graphs/contributors
+[pr-welcome-link]: https://github.com/liblaf/ai-cli/pulls
+[github-contrib-shield]: https://contrib.rocks/image?repo=liblaf%2Fai-cli
+[github-contrib-link]: https://github.com/liblaf/ai-cli/graphs/contributors
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ---

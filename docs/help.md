@@ -1,9 +1,9 @@
-# `llm-cli`
+# `ai-cli`
 
 **Usage**:
 
 ```console
-llm-cli [OPTIONS] COMMAND [ARGS]...
+ai-cli [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -15,12 +15,12 @@ llm-cli [OPTIONS] COMMAND [ARGS]...
 - `commit`
 - `repo`
 
-## `llm-cli commit`
+## `ai-cli commit`
 
 **Usage**:
 
 ```console
-llm-cli commit [OPTIONS] [PATH]...
+ai-cli commit [OPTIONS] [PATH]...
 ```
 
 **Arguments**:
@@ -34,12 +34,12 @@ llm-cli commit [OPTIONS] [PATH]...
 - `--model TEXT`
 - `--help`: Show this message and exit.
 
-## `llm-cli repo`
+## `ai-cli repo`
 
 **Usage**:
 
 ```console
-llm-cli repo [OPTIONS] COMMAND [ARGS]...
+ai-cli repo [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -51,12 +51,12 @@ llm-cli repo [OPTIONS] COMMAND [ARGS]...
 - `description`
 - `topics`
 
-### `llm-cli repo description`
+### `ai-cli repo description`
 
 **Usage**:
 
 ```console
-llm-cli repo description [OPTIONS]
+ai-cli repo description [OPTIONS]
 ```
 
 **Options**:
@@ -64,12 +64,12 @@ llm-cli repo description [OPTIONS]
 - `--model TEXT`
 - `--help`: Show this message and exit.
 
-### `llm-cli repo topics`
+### `ai-cli repo topics`
 
 **Usage**:
 
 ```console
-llm-cli repo topics [OPTIONS]
+ai-cli repo topics [OPTIONS]
 ```
 
 **Options**:

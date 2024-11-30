@@ -2,13 +2,13 @@ import asyncio
 
 import typer_di
 
-import llm_cli.utils as lcu
+import ai.utils as aiu
 
 app = typer_di.TyperDI(name="topics")
 
 
 @app.command()
-def main(_: None = typer_di.Depends(lcu.get_config)) -> None:
+def main(_: None = typer_di.Depends(aiu.get_config)) -> None:
     from ._main import main
 
     asyncio.run(main())

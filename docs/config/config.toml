@@ -1,4 +1,4 @@
-#:schema https://github.com/liblaf/llm-cli/raw/refs/heads/main/docs/schema/config.json
+#:schema https://github.com/liblaf/ai-cli/raw/refs/heads/main/docs/schema/config.json
 [completion]
 model = "deepseek-chat"
 

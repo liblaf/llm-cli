@@ -3,7 +3,7 @@ import functools
 import litellm
 import pydantic
 
-import llm_cli.config as lcc
+import ai.config as aic
 
 
 class ModelConfig(litellm.ModelConfig):
@@ -12,7 +12,7 @@ class ModelConfig(litellm.ModelConfig):
 
 
 def default_model_list() -> list[ModelConfig]:
-    lcc.init_litellm()
+    aic.init_litellm()
     QWEN_API_BASE: str = "https://dashscope.aliyuncs.com/compatible-mode/v1"  # noqa: N806
     QWEN_API_KEY: str | None = litellm.get_secret_str("QWEN_API_KEY")  # noqa: N806  # pyright: ignore [reportCallIssue]
     return [

@@ -2,12 +2,12 @@ from typing import Annotated
 
 import typer
 
-import llm_cli as lc
-import llm_cli.config as lcc
+import ai
+import ai.config as aic
 
 
 def get_config(model: Annotated[str | None, typer.Option()] = None) -> None:
-    lc.logging.init()
-    cfg: lcc.Config = lcc.get_config()
+    ai.logging.init()
+    cfg: aic.Config = aic.get_config()
     if model:
         cfg.completion.model = model

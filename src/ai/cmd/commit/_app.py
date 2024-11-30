@@ -4,7 +4,7 @@ from typing import Annotated
 import typer
 import typer_di
 
-import llm_cli.utils as lcu
+import ai.utils as aiu
 
 app = typer_di.TyperDI(name="commit")
 
@@ -15,7 +15,7 @@ def main(
     *,
     default_exclude: Annotated[bool, typer.Option()] = True,
     verify: Annotated[bool, typer.Option()] = True,
-    _: None = typer_di.Depends(lcu.get_config),
+    _: None = typer_di.Depends(aiu.get_config),
 ) -> None:
     from ._main import main
 
