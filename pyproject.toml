@@ -24,7 +24,7 @@ dependencies = [
   "typer-di>=0.1.2",
   "typer>=0.13.1",
 ]
-description = "🚀 LLM CLI - a powerful, open-source command-line interface for AI-driven repository management. Simplifies commit message generation, repository description, and topic suggestion, enhancing productivity and collaboration for developers."
+description = "🚀 AI CLI - A powerful and versatile command-line interface for AI-driven code commit messages, repository descriptions, and topic generation, designed to enhance productivity and collaboration."
 name = "liblaf-ai-cli"
 readme = "README.md"
 requires-python = ">=3.12"

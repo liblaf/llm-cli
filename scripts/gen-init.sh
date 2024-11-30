@@ -2,7 +2,7 @@
 set -o errexit -o nounset -o pipefail
 
 git_root=$(git rev-parse --show-toplevel)
-src_dir=$git_root/src/ai_cli
+src_dir=$git_root/src/ai
 
 readarray -t dpaths < <(find "$src_dir" -type d)
 for dpath in "${dpaths[@]}"; do

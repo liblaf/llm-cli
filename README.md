@@ -2,9 +2,9 @@
 
 <img height="160" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/refs/heads/main/assets/Rocket/3D/rocket_3d.png">
 
-<h1>LLM CLI</h1>
+<h1>AI CLI</h1>
 
-LLM CLI is a powerful, open-source command-line interface for AI-driven repository management. Simplifies commit message generation, repository description, and topic suggestion, enhancing productivity and collaboration for developers.
+AI CLI is a powerful and versatile command-line interface that leverages AI to generate commit messages, repository descriptions, and topics, enhancing productivity and collaboration for developers. It supports multiple AI models, integrates seamlessly with Git, and offers a user-friendly experience to streamline your workflow.
 
 [![][pypi-release-shield]][pypi-release-link]
 [![][github-releasedate-shield]][github-releasedate-link]

@@ -1,7 +1,33 @@
-Analyze the provided codebase and propose a list of up to 20 relevant topics that will enhance the repository's discoverability and attractiveness to potential contributors. Consider the intended purpose, subject area, programming language, and any unique features of the project. Ensure all topics are in lowercase, use hyphens if necessary, and contain no more than 50 characters each.
+Generate relevant topics for a GitHub repository.
+
+# Steps
+
+1. **Analyze the Codebase**: Review the merged representation of the entire codebase, focusing on the metadata, repository structure, and individual file contents.
+2. **Identify Key Elements**: Determine the primary purpose, subject area, and programming language used in the project.
+3. **Highlight Unique Features**: Note any unique or standout features of the project that could attract contributors.
+4. **Generate Topics**: Create a list of up to 20 topics that reflect the analysis. Ensure each topic is concise, lowercase, and uses hyphens if necessary.
+
+# Output Format
+
+Output the list of topics as a single line of text, with each topic separated by a space. Each topic should be in lowercase and use hyphens if necessary.
+
+<Answer>
+topic1 topic2 topic3 ...
+</Answer>
+
+# Examples
 
 <Example>
+<Input>
+(codebase of tqdm ...)
+</Input>
 <Answer>
-chat ai nextjs tts gemini openai gpt knowledge-base claude rag gpt-4 chatgpt chatglm azure-openai-api function-calling ollama dalle-3 gpt-4-vision qwen2
+python cli console gui time terminal telegram utilities jupyter progress discord progress-bar parallel keras meter progressbar pandas progressmeter rate closember
 </Answer>
 </Example>
+
+# Notes
+
+- Ensure that the topics are relevant to the repository's content and purpose.
+- Each topic should be concise and descriptive, with no more than 50 characters.
+- Use hyphens to separate words within a topic if necessary.

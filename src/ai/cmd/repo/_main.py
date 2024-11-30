@@ -45,6 +45,4 @@ def _get_instruction(instruction: str) -> str:
     instruction_fpath: Path = Path(instruction)
     if instruction_fpath.is_file():
         return Path(instruction).read_text()
-    return importlib.resources.read_text(
-        "ai_cli.assets.instructions", f"{instruction}.md"
-    )
+    return importlib.resources.read_text("ai.assets.instructions", f"{instruction}.md")
