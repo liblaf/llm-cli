@@ -1,9 +1,9 @@
-# `ai-cli`
+# `ai`
 
 **Usage**:
 
 ```console
-ai-cli [OPTIONS] COMMAND [ARGS]...
+ai [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -15,12 +15,12 @@ ai-cli [OPTIONS] COMMAND [ARGS]...
 - `commit`
 - `repo`
 
-## `ai-cli commit`
+## `ai commit`
 
 **Usage**:
 
 ```console
-ai-cli commit [OPTIONS] [PATH]...
+ai commit [OPTIONS] [PATH]...
 ```
 
 **Arguments**:
@@ -34,12 +34,12 @@ ai-cli commit [OPTIONS] [PATH]...
 - `--model TEXT`
 - `--help`: Show this message and exit.
 
-## `ai-cli repo`
+## `ai repo`
 
 **Usage**:
 
 ```console
-ai-cli repo [OPTIONS] COMMAND [ARGS]...
+ai repo [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -51,25 +51,26 @@ ai-cli repo [OPTIONS] COMMAND [ARGS]...
 - `description`
 - `topics`
 
-### `ai-cli repo description`
+### `ai repo description`
 
 **Usage**:
 
 ```console
-ai-cli repo description [OPTIONS]
+ai repo description [OPTIONS]
 ```
 
 **Options**:
 
+- `--long / --no-long`: [default: no-long]
 - `--model TEXT`
 - `--help`: Show this message and exit.
 
-### `ai-cli repo topics`
+### `ai repo topics`
 
 **Usage**:
 
 ```console
-ai-cli repo topics [OPTIONS]
+ai repo topics [OPTIONS]
 ```
 
 **Options**:
