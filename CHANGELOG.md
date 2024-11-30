@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.2](https://github.com/liblaf/ai-cli/compare/v0.0.1...v0.0.2) (2024-11-30)
+
+
+### 📝 Documentation
+
+* update CLI command references to use 'ai' instead of 'ai-cli' ([06bc78a](https://github.com/liblaf/ai-cli/commit/06bc78a861c91bd06c5050e146075684b80d186c))
+* update README and utility function for consistency ([59e20ee](https://github.com/liblaf/ai-cli/commit/59e20ee575057d7b5f75c84bb3810e4b93066d21))
+
+
+### ♻ Code Refactoring
+
+* rename LLM CLI to AI CLI for broader applicability ([53b7d9d](https://github.com/liblaf/ai-cli/commit/53b7d9d9ad2e4e25703df9e0e0cce5f3ffbed7c0))
+
 ## [0.0.1](https://github.com/liblaf/ai-cli/compare/v0.0.0...v0.0.1) (2024-11-30)
 
 
