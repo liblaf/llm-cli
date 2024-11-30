@@ -21,11 +21,11 @@ LLM CLI is a powerful, open-source command-line interface for AI-driven reposito
 
 </div>
 
-[pypi-release-shield]: https://img.shields.io/pypi/v/liblaf-ai-cli?logo=pypi&style=flat&label=PyPI
+[pypi-release-shield]: https://img.shields.io/pypi/v/liblaf-ai-cli?color=3775a9&logo=pypi&logoColor=white&style=flat&label=PyPI
 [pypi-release-link]: https://pypi.org/project/liblaf-ai-cli/
 [github-releasedate-shield]: https://img.shields.io/github/release-date/liblaf/ai-cli?style=flat
 [github-releasedate-link]: https://github.com/liblaf/ai-cli/releases
-[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/ai-cli/ci.yaml?label=ci&logo=githubactions&logoColor=white&style=flat
+[github-action-ci-shield]: https://img.shields.io/github/actions/workflow/status/liblaf/ai-cli/ci.yaml?label=CI&logo=githubactions&logoColor=white&style=flat
 [github-action-ci-link]: https://github.com/liblaf/ai-cli/actions/workflows/ci.yaml
 [github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/ai-cli?color=c4f042&style=flat
 [github-contributors-link]: https://github.com/liblaf/ai-cli/graphs/contributors
@@ -46,12 +46,6 @@ To install `ai-cli`, run the following command:
 uv tool install liblaf-ai-cli
 ```
 
-or
-
-```bash
-pipx install liblaf-ai-cli
-```
-
 ## ⌨️ Local Development
 
 You can clone it for local development:
@@ -60,7 +54,7 @@ You can clone it for local development:
 gh repo clone liblaf/ai-cli
 cd ai-cli
 uv sync --all-extras
-ai-cli --help
+ai --help
 ```
 
 ## 🤝 Contributing
